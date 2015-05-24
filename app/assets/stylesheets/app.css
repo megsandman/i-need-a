@@ -1,0 +1,12 @@
+.dropdown-button {
+  padding: 10px 16px;
+  /*font-size: 18px;*/
+  /*line-height: 1.3333333;*/
+  /*border-radius: 6px;*/
+  height: 40px;
+}
+
+.background-image {
+  background: url(http://i.imgur.com/bLswt65.jpg) no-repeat center center;
+  background-size: cover;
+}
