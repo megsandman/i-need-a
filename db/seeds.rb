@@ -1,14 +1,14 @@
-# neighborhoods = ["Doesn't Matter", "Financial District", "Hayes Valley", "The Marina", "The Mission", "Nob Hill", "North Beach", "NOPA", "Pac Heights", "SOMA", "Sunset", "The Richmond"]
+neighborhoods = ["Doesn't Matter", "Financial District", "Hayes Valley", "The Marina", "The Mission", "Nob Hill", "North Beach", "NOPA", "Pac Heights", "SOMA", "Sunset", "The Richmond"]
 
-# neighborhoods.each do |neighborhood|
-#   Neighborhood.create(name: neighborhood)
-# end
+neighborhoods.each do |neighborhood|
+  Neighborhood.create(name: neighborhood)
+end
 
-# activities = ["Bar", "Restaurant"]
+activities = ["Bar", "Restaurant"]
 
-# activities.each do |activity|
-#     Activity.create(name: activity)
-# end
+activities.each do |activity|
+    Activity.create(name: activity)
+end
 # Doesn't Matter - 1
 Match.create(name: "Press Club", activity_id: 1, neighborhood_id: 1)
 Match.create(name: "NOPA", activity_id: 2, neighborhood_id: 1)
