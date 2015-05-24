@@ -16,7 +16,8 @@ $(document).ready(function() {
   function sendSelections(selectionObject) {
     $.ajax({
       type: 'GET',
-      url: 'http://localhost:3000/matches/',
+      url: 'https://ineeda.herokuapp.com/matches/',
+      // url: 'http://localhost:3000/matches/',
       data: selectionObject,
       success: function(response) {
         console.log("success")
