@@ -10,3 +10,13 @@
   background: url(http://i.imgur.com/bLswt65.jpg) no-repeat center center;
   background-size: cover;
 }
+
+.match-name {
+  text-decoration: none;
+  color: black;
+}
+
+.match-name:hover {
+  text-decoration: none;
+  color: white;
+}

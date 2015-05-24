@@ -6,7 +6,7 @@
                     <h1>I need a</h1><br>
                     <div class="dropdown">
                       <select class="dropdown-button activities">
-                        <option value="0" >Venues</option>
+                        <option value="0" >Venue Type</option>
                         <%= @activities.each do |activity| %>
                           <option value="<%= activity.id%>"><%= activity.name %></option>
                         <% end %>

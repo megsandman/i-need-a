@@ -9,6 +9,7 @@ class MatchesController < ApplicationController
     p requested_neighborhood_id
     p "5" * 10
 
+
     @match = Match.where("neighborhood_id = ? AND activity_id = ?", requested_neighborhood_id, requested_activity_id).first
     p @match
 

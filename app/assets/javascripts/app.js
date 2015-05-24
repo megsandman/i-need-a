@@ -16,8 +16,8 @@ $(document).ready(function() {
   function sendSelections(selectionObject) {
     $.ajax({
       type: 'GET',
-      url: 'https://ineeda.herokuapp.com/matches/',
-      // url: 'http://localhost:3000/matches/',
+      // url: 'https://ineeda.herokuapp.com/matches/',
+      url: 'http://localhost:3000/matches/',
       data: selectionObject,
       success: function(response) {
         console.log("success")
@@ -31,26 +31,9 @@ $(document).ready(function() {
 
   function appendMatch(matchObject) {
     var matchName = matchObject.name
-    var html = "<h1>Go to " + matchName + "</h1>"
+    var html = "<h1>Go to <a class='match-name' target='blank' href='" + matchObject.link + "'>" + matchName + "</a></h1>"
     console.log(html)
     $("#match-div").html(html)
   }
-
-// // delete button to actually delete
-//     $('.delete-tag').click(function(e) {
-//         event.preventDefault();
-//         prodId = $(this).attr('id')
-//         // console.log(prodId);
-
-//         $.ajax({
-//           url: '/products/' + prodId,
-//           type: 'DELETE',
-//           success: function(result) {
-//             console.log(prodId)
-
-//           }
-//         })
-
-//     })
 
 })
