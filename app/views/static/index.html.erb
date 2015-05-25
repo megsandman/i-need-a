@@ -5,7 +5,7 @@
                 <div class="intro-message">
                     <h1>I need</h1><br>
                     <div class="dropdown">
-                      <select class="dropdown-button activities">
+                      <select class="dropdown-button activities btn btn-default">
                         <option value="0" >Category</option>
                         <%= @activities.each do |activity| %>
                           <option value="<%= activity.id%>"><%= activity.name %></option>
@@ -14,7 +14,7 @@
                     </div>
                     <br><h1>I feel like</h1><br>
                     <div class="dropdown">
-                      <select class="dropdown-button genres">
+                      <select class="dropdown-button genres btn btn-default">
                         <option value="0">Type</option>
                         <%= @genres.each do |genre| %>
                           <option value="<%= genre.id%>"><%= genre.name %></option>
@@ -23,7 +23,7 @@
                     </div>
                     <br><h1>in</h1><br>
                     <div class="dropdown">
-                      <select class="dropdown-button neighborhoods">
+                      <select class="dropdown-button neighborhoods btn btn-default">
                         <option value="0" >Neighborhood</option>
                         <%= @neighborhoods.each do |neighborhood| %>
                           <option value="<%= neighborhood.id%>"><%= neighborhood.name %></option>
