@@ -16,6 +16,11 @@
   color: black;
 }
 
+.match-name:visited {
+  text-decoration: none;
+  color: black;
+}
+
 .match-name:hover {
   text-decoration: none;
   color: white;

@@ -3,12 +3,21 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="intro-message">
-                    <h1>I need a</h1><br>
+                    <h1>I need</h1><br>
                     <div class="dropdown">
                       <select class="dropdown-button activities">
-                        <option value="0" >Venue Type</option>
+                        <option value="0" >Category</option>
                         <%= @activities.each do |activity| %>
                           <option value="<%= activity.id%>"><%= activity.name %></option>
+                        <% end %>
+                      </select>
+                    </div>
+                    <br><h1>I feel like</h1><br>
+                    <div class="dropdown">
+                      <select class="dropdown-button genres">
+                        <option value="0">Type</option>
+                        <%= @genres.each do |genre| %>
+                          <option value="<%= genre.id%>"><%= genre.name %></option>
                         <% end %>
                       </select>
                     </div>
@@ -21,7 +30,6 @@
                         <% end %>
                       </select>
                     </div>
-                    <!-- <hr class="intro-divider"> -->
                     <br><div class="btn btn-lg btn-default" id="submit-button">HELP!</div>
                 <br><div id="match-div">
                 </div>

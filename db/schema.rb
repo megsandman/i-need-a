@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150524161613) do
+ActiveRecord::Schema.define(version: 20150525012727) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,13 +22,20 @@ ActiveRecord::Schema.define(version: 20150524161613) do
     t.datetime "updated_at"
   end
 
+  create_table "genres", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "activity_id"
+  end
+
   create_table "matches", force: true do |t|
     t.string   "name"
     t.integer  "neighborhood_id"
-    t.integer  "activity_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "link",            default: ""
+    t.integer  "genre_id"
   end
 
   create_table "neighborhoods", force: true do |t|
