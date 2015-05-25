@@ -87,7 +87,22 @@ Match.create(name:"Escape From New York", link: "Escape From New York", genre_id
 # Match.create(name:"", link: "", genre_id:16, neighborhood_id: 4)
 
 # # 5 Hayes Valley
-# Match.create(name:"", link: "", genre_id:, neighborhood_id:)
+Match.create(name:"Brass Tacks", link: "http://www.yelp.com/biz/brass-tacks-san-francisco-2", genre_id:1, neighborhood_id: 5)
+Match.create(name:"Two Sisters", link: "http://www.yelp.com/biz/two-sisters-bar-and-books-san-francisco", genre_id:2, neighborhood_id: 5)
+Match.create(name:"Blue Bottle", link: "http://www.yelp.com/biz/blue-bottle-coffee-san-francisco-8", genre_id:3, neighborhood_id: 5)
+Match.create(name:"Place Pigalle", link: "http://www.yelp.com/biz/place-pigalle-san-francisco", genre_id:4, neighborhood_id: 5)
+Match.create(name:"Biergarten", link: "http://www.yelp.com/biz/biergarten-san-francisco", genre_id:5, neighborhood_id: 5)
+Match.create(name:"Fig & Thistle", link: "Fig & Thistle", genre_id:6, neighborhood_id: 5)
+Match.create(name:"suppenkuche", link: "http://www.yelp.com/biz/suppenk%C3%BCche-san-francisco-2", genre_id:7, neighborhood_id: 5)
+Match.create(name:"Otoro Sushi", link: "http://www.yelp.com/biz/o-toro-sushi-san-francisco", genre_id:8, neighborhood_id: 5)
+Match.create(name:"Absinthe", link: "http://www.yelp.com/biz/absinthe-brasserie-and-bar-san-francisco-2", genre_id:9, neighborhood_id: 5)
+Match.create(name:"Chez Maman", link: "http://www.yelp.com/biz/chez-maman-west-san-francisco-2", genre_id:10, neighborhood_id: 5)
+Match.create(name:"Papito", link: "http://www.yelp.com/biz/papito-hayes-san-francisco", genre_id:11, neighborhood_id: 5)
+Match.create(name:"Smitten Ice Cream", link: "http://www.yelp.com/biz/smitten-ice-cream-san-francisco-3", genre_id:12, neighborhood_id: 5)
+Match.create(name:"Rich Table", link: "http://www.yelp.com/biz/rich-table-san-francisco", genre_id:13, neighborhood_id: 5)
+Match.create(name:"Souvla", link: "http://www.yelp.com/biz/souvla-san-francisco", genre_id:14, neighborhood_id: 5)
+# Match.create(name:"", link: "", genre_id:15, neighborhood_id: 5)
+Match.create(name:"Arlequin", link: "http://www.yelp.com/biz/arlequin-cafe-and-food-to-go-san-francisco", genre_id:16, neighborhood_id: 5)
 
 # # 6 Lower Haight
 # Match.create(name:"", link: "", genre_id:, neighborhood_id:)
