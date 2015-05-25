@@ -1,27 +1,27 @@
-# neighborhoods = ["Doesn't Matter", "Dogpatch", "Financial District", "Haight/Cole Valley", "Hayes Valley", "Lower Haight", "The Marina", "The Mission", "Nob Hill", "NOPA", "North Beach", "Pac Heights", "The Richmond", "Russian Hill", "SOMA", "The Sunset", "Tenderloin"]
+neighborhoods = ["Doesn't Matter", "Dogpatch", "Financial District", "Haight/Cole Valley", "Hayes Valley", "Lower Haight", "The Marina", "The Mission", "Nob Hill", "NOPA", "North Beach", "Pac Heights", "The Richmond", "Russian Hill", "SOMA", "The Sunset", "Tenderloin"]
 
-# neighborhoods.each do |neighborhood|
-#   Neighborhood.create(name: neighborhood)
-# end
+neighborhoods.each do |neighborhood|
+  Neighborhood.create(name: neighborhood)
+end
 
-# # activities = ["drinks", "food", "an activity"]
-# activities = ["drinks", "food"]
+# activities = ["drinks", "food", "an activity"]
+activities = ["drinks", "food"]
 
-# activities.each do |activity|
-#     Activity.create(name: activity)
-# end
+activities.each do |activity|
+    Activity.create(name: activity)
+end
 
-# genres_drinks = ["something good", "cocktails", "coffee", "a dive bar", "outdoors", "wine bar"]
+genres_drinks = ["something good", "cocktails", "coffee", "a dive bar", "outdoors", "wine bar"]
 
-# genres_drinks.each do |genre|
-#     Genre.create(name: genre, activity_id: 1)
-# end
+genres_drinks.each do |genre|
+    Genre.create(name: genre, activity_id: 1)
+end
 
-# genres_food = ["something good", "Asian", "brunch", "a burger", "a burrito", "dessert", "fancy", "quick and easy", "pizza", "a salad"]
+genres_food = ["something good", "Asian", "brunch", "a burger", "a burrito", "dessert", "fancy", "quick and easy", "pizza", "a salad"]
 
-# genres_food.each do |genre|
-#     Genre.create(name: genre, activity_id: 2)
-# end
+genres_food.each do |genre|
+    Genre.create(name: genre, activity_id: 2)
+end
 
 # genres_activity = ["a bar with games", "a club", "hookah"]
 
@@ -32,23 +32,23 @@
 # 1 Doesn't Matter
 # Match.create(name:"", link: "", genre_id:, neighborhood_id:)
 
-# # 2 Dogpatch
-# Match.create(name:"Yield Wine Bar", link: "http://www.yelp.com/biz/yield-wine-bar-san-francisco", genre_id:1, neighborhood_id: 2)
-# Match.create(name:"Dogpatch Saloon", link: "http://www.yelp.com/biz/dogpatch-saloon-san-francisco-3", genre_id: 2, neighborhood_id: 2)
-# Match.create(name:"La Stazione Coffee", link: "http://www.yelp.com/biz/la-stazione-coffee-and-wine-bar-san-francisco?osq=dogpatch+restaurants", genre_id: 3, neighborhood_id: 2)
-# # Match.create(name:"", link: "", genre_id: 4, neighborhood_id: 2)
-# Match.create(name:"The Ramp", link: "http://www.yelp.com/biz/the-ramp-san-francisco?osq=dogpatch+restaurants", genre_id: 5, neighborhood_id: 2)
-# Match.create(name:"Dogpatch Wine Works", link: "http://www.yelp.com/biz/dogpatch-wineworks-san-francisco", genre_id: 6, neighborhood_id: 2)
-# Match.create(name:"Smokestack", link: "http://www.yelp.com/biz/smokestack-san-francisco?osq=dogpatch+restaurants", genre_id: 7, neighborhood_id: 2)
-# # Match.create(name:"", link: "", genre_id: 8, neighborhood_id: 2)
-# Match.create(name:"Just For You Cafe", link: "http://www.yelp.com/biz/just-for-you-cafe-san-francisco?osq=dogpatch+restaurants", genre_id: 9, neighborhood_id: 2)
-# # Match.create(name:"", link: "", genre_id: 10, neighborhood_id: 2)
-# # Match.create(name:"", link: "", genre_id: 11, neighborhood_id: 2)
-# Match.create(name:"Mr. and Mrs. Miscellaneous", link: "http://www.yelp.com/biz/mr-and-mrs-miscellaneous-san-francisco?osq=dogpatch+restaurants", genre_id: 12, neighborhood_id: 2)
-# Match.create(name:"Serpentine", link: "http://www.yelp.com/biz/serpentine-san-francisco", genre_id: 13, neighborhood_id: 2)
-# # Match.create(name:"", link: "", genre_id: 14, neighborhood_id: 2)
-# Match.create(name:"Long Bridge Pizza", link: "http://www.yelp.com/biz/long-bridge-pizza-company-san-francisco?osq=dogpatch+restaurants", genre_id: 15, neighborhood_id: 2)
-# # Match.create(name:"", link: "", genre_id: 16, neighborhood_id: 2)
+# 2 Dogpatch
+Match.create(name:"Yield Wine Bar", link: "http://www.yelp.com/biz/yield-wine-bar-san-francisco", genre_id:1, neighborhood_id: 2)
+Match.create(name:"Dogpatch Saloon", link: "http://www.yelp.com/biz/dogpatch-saloon-san-francisco-3", genre_id: 2, neighborhood_id: 2)
+Match.create(name:"La Stazione Coffee", link: "http://www.yelp.com/biz/la-stazione-coffee-and-wine-bar-san-francisco?osq=dogpatch+restaurants", genre_id: 3, neighborhood_id: 2)
+# Match.create(name:"", link: "", genre_id: 4, neighborhood_id: 2)
+Match.create(name:"The Ramp", link: "http://www.yelp.com/biz/the-ramp-san-francisco?osq=dogpatch+restaurants", genre_id: 5, neighborhood_id: 2)
+Match.create(name:"Dogpatch Wine Works", link: "http://www.yelp.com/biz/dogpatch-wineworks-san-francisco", genre_id: 6, neighborhood_id: 2)
+Match.create(name:"Smokestack", link: "http://www.yelp.com/biz/smokestack-san-francisco?osq=dogpatch+restaurants", genre_id: 7, neighborhood_id: 2)
+# Match.create(name:"", link: "", genre_id: 8, neighborhood_id: 2)
+Match.create(name:"Just For You Cafe", link: "http://www.yelp.com/biz/just-for-you-cafe-san-francisco?osq=dogpatch+restaurants", genre_id: 9, neighborhood_id: 2)
+# Match.create(name:"", link: "", genre_id: 10, neighborhood_id: 2)
+# Match.create(name:"", link: "", genre_id: 11, neighborhood_id: 2)
+Match.create(name:"Mr. and Mrs. Miscellaneous", link: "http://www.yelp.com/biz/mr-and-mrs-miscellaneous-san-francisco?osq=dogpatch+restaurants", genre_id: 12, neighborhood_id: 2)
+Match.create(name:"Serpentine", link: "http://www.yelp.com/biz/serpentine-san-francisco", genre_id: 13, neighborhood_id: 2)
+# Match.create(name:"", link: "", genre_id: 14, neighborhood_id: 2)
+Match.create(name:"Long Bridge Pizza", link: "http://www.yelp.com/biz/long-bridge-pizza-company-san-francisco?osq=dogpatch+restaurants", genre_id: 15, neighborhood_id: 2)
+# Match.create(name:"", link: "", genre_id: 16, neighborhood_id: 2)
 
 # # 3 Financial DIstrict
 Match.create(name:"Burritt Room", link: "http://www.yelp.com/biz/burritt-room-tavern-san-francisco", genre_id:1, neighborhood_id: 3)
