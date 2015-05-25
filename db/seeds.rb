@@ -283,6 +283,8 @@
 
 # # # 15  SOMA
 # Match.create(name:"Southside Spirit House", link: "http://www.yelp.com/biz/southside-spirit-house-san-francisco?osq=soma+restaurants", genre_id:1, neighborhood_id:15)
+Match.create(name:"Jamber", link: "http://www.yelp.com/biz/jamber-san-francisco", genre_id:1, neighborhood_id:15)
+Match.create(name:"Trou Normand", link: "http://www.yelp.com/biz/trou-normand-san-francisco", genre_id:2, neighborhood_id:15)
 # Match.create(name:"Local Edition", link: "http://www.yelp.com/biz/local-edition-san-francisco", genre_id:2, neighborhood_id:15)
 # Match.create(name:"Red Door Coffee", link: "http://www.yelp.com/biz/red-door-coffee-san-francisco-2", genre_id:3, neighborhood_id:15)
 # Match.create(name:"Bloodhound", link: "http://www.yelp.com/biz/bloodhound-san-francisco-2", genre_id:4, neighborhood_id:15)

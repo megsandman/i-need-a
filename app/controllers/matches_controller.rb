@@ -15,6 +15,9 @@ class MatchesController < ApplicationController
 
     if @match.length == 0
       match_to_send = {name: "Hmmm we haven't found a good option yet", link: "https://www.google.com/", id: 0}
+    elsif @match.length > 1
+      random_index = rand(@match.length)
+      match_to_send = @match[random_index]
     else
       match_to_send = @match.first
     end
