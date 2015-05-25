@@ -13,15 +13,15 @@
 
 .match-name {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .match-name:visited {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .match-name:hover {
   text-decoration: none;
-  color: white;
+  color: black;
 }
