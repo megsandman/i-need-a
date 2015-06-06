@@ -6,18 +6,17 @@ $(document).ready(function() {
     var neighborhood = $(".neighborhoods").val()
     var genre = $(".genres").val()
     var selection = {
-      genre_id: parseInt(genre),
-      neighborhood_id: parseInt(neighborhood)
+      genre_name: genre,
+      neighborhood_name: neighborhood
     }
-    console.log(selection)
     sendSelections(selection)
   })
 
   function sendSelections(selectionObject) {
     $.ajax({
       type: 'GET',
-      url: 'https://ineeda.herokuapp.com/matches/',
-      // url: 'http://localhost:3000/matches/',
+      // url: 'https://ineeda.herokuapp.com/matches/',
+      url: 'http://localhost:3000/matches/',
       data: selectionObject,
       success: function(response) {
         console.log("success")
@@ -44,11 +43,11 @@ $(document).ready(function() {
   $('.activities').change(function() {
     if ($('.activities').val() == "1") {
       $(".genres").empty()
-      html = "<option value='0'>Type</option><option value='1' id='1'>something good</option><option value='2' id='2'>cocktails</option><option value='3' id='3'>coffee</option><option value='4' id='4'>dive bar</option><option value='5' id='5'>outdoors</option><option value='6' id='6'>wine bar</option>"
+      html = "<option value='0'>Type</option><option value='something good' id='1'>something good</option><option value='cocktails' id='2'>cocktails</option><option value='coffee' id='3'>coffee</option><option value='dive bar' id='4'>dive bar</option><option value='outdoors' id='5'>outdoors</option><option value='wine bar' id='6'>wine bar</option>"
       $(".genres").append(html)
     } else if ($('.activities').val() == "2") {
       $(".genres").empty()
-      html = "<option value='0'>Type</option><option value='7' id='7'>something good</option><option value='8' id='8'>Asian</option><option value='9' id='9'>brunch</option><option value='10' id='10'>burger</option><option value='11' id='11'>burrito</option><option value='12' id='12'>dessert</option><option value='13' id='13'>fancy</option><option value='14' id='14'>quick and easy</option><option value='15' id='15'>pizza</option><option value='16' id='16'>salad</option>"
+      html = "<option value='0'>Type</option><option value='something good' id='7'>something good</option><option value='Asian' id='8'>Asian</option><option value='brunch' id='9'>brunch</option><option value='burger' id='10'>burger</option><option value='burrito' id='11'>burrito</option><option value='dessert' id='12'>dessert</option><option value='fancy' id='13'>fancy</option><option value='quick and easy' id='14'>quick and easy</option><option value='pizza' id='15'>pizza</option><option value='salads' id='16'>salad</option>"
       $(".genres").append(html)
     } else if ($('.activities').val() == "3") {
       $(".genres").empty()

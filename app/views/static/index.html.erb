@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="intro-message">
-                    <h1>I need</h1><br>
+                    <h1>I want</h1><br>
                     <div class="dropdown">
                       <select class="dropdown-button activities btn btn-default">
                         <option value="0" >Category</option>
@@ -26,7 +26,7 @@
                       <select class="dropdown-button neighborhoods btn btn-default">
                         <option value="0" >Neighborhood</option>
                         <%= @neighborhoods.each do |neighborhood| %>
-                          <option value="<%= neighborhood.id%>"><%= neighborhood.name %></option>
+                          <option value="<%= neighborhood.name%>"><%= neighborhood.name %></option>
                         <% end %>
                       </select>
                     </div>
