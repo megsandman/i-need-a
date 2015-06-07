@@ -1,15 +1,18 @@
 class MatchesController < ApplicationController
+  skip_before_filter :verify_authenticity_token
   require 'json'
 
-  def index
+  def find
 
-    # JSON.parse(params)
+    # parsed_params = JSON.parse(params)
+    p "5" * 10
     p params
-    requested_genre_name = params[:genre_name]
+    # p parsed_params
+    requested_genre_name = params["genre"]
+    p requested_genre_name
     requested_genre_id = Genre.where(name: requested_genre_name).first
     p requested_genre_id
-    p "5" * 10
-    requested_neighborhood_name = params[:neighborhood_name]
+    requested_neighborhood_name = params["neighborhood"]
     requested_neighborhood_id = Neighborhood.where(name: requested_neighborhood_name).first
     p requested_neighborhood_id
     p "5" * 10

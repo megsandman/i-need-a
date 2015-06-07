@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :matches, :only => [:index]
+  post 'matches/find'
+  # resources :matches, :only => [:index]
   resources :activities, :only => [:index]
   resources :genres, :only => [:show]
   resources :neighborhoods, :only => [:index]

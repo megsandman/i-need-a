@@ -14,9 +14,9 @@ $(document).ready(function() {
 
   function sendSelections(selectionObject) {
     $.ajax({
-      type: 'GET',
-      url: 'https://ineeda.herokuapp.com/matches/',
-      // url: 'http://localhost:3000/matches/',
+      type: 'POST',
+      url: 'https://ineeda.herokuapp.com/matches/find',
+      // url: 'http://localhost:3000/matches/find',
       data: selectionObject,
       success: function(response) {
         console.log("success")
