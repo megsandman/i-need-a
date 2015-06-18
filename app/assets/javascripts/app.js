@@ -6,8 +6,8 @@ $(document).ready(function() {
     var neighborhood = $(".neighborhoods").val()
     var genre = $(".genres").val()
     var selection = {
-      genre_name: genre,
-      neighborhood_name: neighborhood
+      genre: genre,
+      neighborhood: neighborhood
     }
     sendSelections(selection)
   })
@@ -15,8 +15,8 @@ $(document).ready(function() {
   function sendSelections(selectionObject) {
     $.ajax({
       type: 'POST',
-      url: 'https://ineeda.herokuapp.com/matches/find',
-      // url: 'http://localhost:3000/matches/find',
+      // url: 'https://ineeda.herokuapp.com/matches/find',
+      url: 'http://localhost:3000/matches/find',
       data: selectionObject,
       success: function(response) {
         console.log("success")
