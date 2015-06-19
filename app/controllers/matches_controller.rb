@@ -4,19 +4,10 @@ class MatchesController < ApplicationController
 
   def find
 
-    # parsed_params = JSON.parse(params)
-    p "5" * 10
-    p params
-    # p parsed_params
     requested_genre_name = params["genre"]
-    p requested_genre_name
     requested_genre_id = Genre.where(name: requested_genre_name).first
-    p requested_genre_id
     requested_neighborhood_name = params["neighborhood"]
     requested_neighborhood_id = Neighborhood.where(name: requested_neighborhood_name).first
-    p requested_neighborhood_id
-    p "5" * 10
-
 
     @match = Match.where("neighborhood_id = ? AND genre_id = ?", requested_neighborhood_id, requested_genre_id)
     p @match
