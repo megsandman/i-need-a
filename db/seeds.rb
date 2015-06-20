@@ -17,7 +17,7 @@
 #     Genre.create(name: genre, activity_id: 1)
 # end
 
-# genres_food = ["something good", "Asian", "brunch", "a burger", "a burrito", "dessert", "fancy", "quick and easy", "pizza", "a salad"]
+# genres_food = ["something yummy", "Asian", "brunch", "a burger", "a burrito", "dessert", "fancy", "quick and easy", "pizza", "a salad"]
 
 # genres_food.each do |genre|
 #     Genre.create(name: genre, activity_id: 2)
