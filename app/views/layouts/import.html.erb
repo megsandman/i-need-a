@@ -36,7 +36,7 @@
       <tbody class="import-details">
         <% @matches.each do |match|%>
           <tr id="<%= match.id %>" class="row">
-          <%= form_for :match do |f| %>
+          <%= form_for match do |f| %>
             <td class="col-lrg-1 match-link"><%= match.id %></td>
             <td class="col-lrg-1 match-link"><%= match.updated_at.in_time_zone("Pacific Time (US & Canada)").to_formatted_s(:short) %></td>
             <td class="col-lrg-1 match-link"><%= match.neighborhood_id %></td>
@@ -45,7 +45,7 @@
             <td class="col-lrg-1"><%= f.text_field :address, :class => 'import-text-box' %></td>
             <td class="col-lrg-1"><%= f.text_field :city, :class => 'import-text-box' %></td>
             <td class="col-lrg-1"><%= f.text_field :state, :class => 'import-text-box' %></td>
-            <td class="col-lrg-1"><%= f.text_field :zip, :class => 'import-text-box' %></td>
+            <td class="col-lrg-1"><%= f.text_field :zip_code, :class => 'import-text-box' %></td>
             <td class="col-lrg-1"><%= f.text_field :link, :class => 'import-text-box' %></td>
             <td class="col-lrg-1 import-buttons"><%= f.submit 'Update', :class => 'approve-delete-buttons update-button', :id => match.id %></td>
           <% end %>

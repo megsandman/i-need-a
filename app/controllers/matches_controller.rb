@@ -25,29 +25,36 @@ class MatchesController < ApplicationController
 
   end
 
+  def index
+
+  end
+
+  def show
+    @match = params[:id]
+    render :json => @match, status: 200
+  end
+
   def update
-    # @product = Product.find(params[:id])
-    # respond_to do |format|
-    #   if @product.update(product_params)
-    #     @product.content_approved = true
-    #     @product.set_queue_order
-    #     if @product.save
-    #       format.html { redirect_to '/imports', notice: 'Todo successfully created.'}
-    #       format.js { render :update }
-    #       # render json: product, status: 201
-    #       # redirect_to '/imports'
-    #     else
-    #       redirect_to '/imports'
-    #     end
-    #   else
-    #     redirect_to '/imports'
-    #   end
-    # end
+    @match = Match.find(params[:id])
+    respond_to do |format|
+      if @match.update(match_params)
+        if @match.save
+          format.html { redirect_to '/imports', notice: 'Match successfully created.'}
+          format.js { render :update }
+          # render json: match, status: 201
+          # redirect_to '/imports'
+        else
+          redirect_to '/imports'
+        end
+      else
+        redirect_to '/imports'
+      end
+    end
   end
 
   private
 
     def match_params
-      params.require(:match).permit(:name, :genre_id, :neighborhood_id)
+      params.require(:match).permit(:name, :genre_id, :neighborhood_id, :link, :address, :city, :state, :zip_code)
     end
 end

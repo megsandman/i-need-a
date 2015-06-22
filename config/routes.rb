@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :genres, :only => [:show]
   resources :neighborhoods, :only => [:index]
   resources :imports, :only => [:index]
+  resources :matches, :only => [:index, :show, :update]
 
 
   root to: 'static#index'
