@@ -1,6 +1,6 @@
 class ImportsController < ApplicationController
   def index
-      @matches = Match.where(neighborhood_id: 10).order(neighborhood_id: :asc).order(genre_id: :asc)
+      @matches = Match.where(neighborhood_id: 11).order(neighborhood_id: :asc).order(genre_id: :asc)
       render :layout => 'import'
   end
 
