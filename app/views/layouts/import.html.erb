@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <title>i wanna</title>
+  <%= csrf_meta_tags %>
+  <link href="../../../assets/imports.css" rel="stylesheet" type="text/css">
+  <link href="../../../assets/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <script src="../../../assets/jquery-1.11.0.min.js"></script>
+  <script src="../../../assets/imports.js"></script>
+
+
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="all-matches">
+  <h1 class="import-header">ALL MATCHES</h1>
+  <div>
+    <table>
+      <thead>
+        <tr class="row">
+          <th class="col-lrg-1 import-table-headers">Match ID</th>
+          <th class="col-lrg-1 import-table-headers">Updated</th>
+          <th class="col-lrg-1 import-table-headers">Neighborhood</th>
+          <th class="col-lrg-1 import-table-headers">Genre</th>
+          <th class="col-lrg-2 import-table-headers">Name</th>
+          <th class="col-lrg-1 import-table-headers">Address</th>
+          <th class="col-lrg-1 import-table-headers">City</th>
+          <th class="col-lrg-1 import-table-headers">State</th>
+          <th class="col-lrg-1 import-table-headers">Zip</th>
+          <th class="col-lrg-1 import-table-headers">Yelp Link</th>
+          <th class="col-lrg-1 import-table-headers">Update</th>
+          <tr>
+      </thead>
+      <tbody class="import-details">
+        <% @matches.each do |match|%>
+          <tr id="<%= match.id %>" class="row">
+          <%= form_for :match do |f| %>
+            <td class="col-lrg-1 match-link"><%= match.id %></td>
+            <td class="col-lrg-1 match-link"><%= match.updated_at.in_time_zone("Pacific Time (US & Canada)").to_formatted_s(:short) %></td>
+            <td class="col-lrg-1 match-link"><%= match.neighborhood_id %></td>
+            <td class="col-lrg-1 match-link"><%= match.genre_id %></td>
+            <td class="col-lrg-2"><%= f.text_field :name, :class => 'import-text-box' %></td>
+            <td class="col-lrg-1"><%= f.text_field :address, :class => 'import-text-box' %></td>
+            <td class="col-lrg-1"><%= f.text_field :city, :class => 'import-text-box' %></td>
+            <td class="col-lrg-1"><%= f.text_field :state, :class => 'import-text-box' %></td>
+            <td class="col-lrg-1"><%= f.text_field :zip, :class => 'import-text-box' %></td>
+            <td class="col-lrg-1"><%= f.text_field :link, :class => 'import-text-box' %></td>
+            <td class="col-lrg-1 import-buttons"><%= f.submit 'Update', :class => 'approve-delete-buttons update-button', :id => match.id %></td>
+          <% end %>
+
+        </tr>
+        <% end %>
+      </tbody>
+    <table>
+  </div>
+</div>
+</body>
+</html>

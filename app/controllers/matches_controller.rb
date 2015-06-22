@@ -25,6 +25,26 @@ class MatchesController < ApplicationController
 
   end
 
+  def update
+    # @product = Product.find(params[:id])
+    # respond_to do |format|
+    #   if @product.update(product_params)
+    #     @product.content_approved = true
+    #     @product.set_queue_order
+    #     if @product.save
+    #       format.html { redirect_to '/imports', notice: 'Todo successfully created.'}
+    #       format.js { render :update }
+    #       # render json: product, status: 201
+    #       # redirect_to '/imports'
+    #     else
+    #       redirect_to '/imports'
+    #     end
+    #   else
+    #     redirect_to '/imports'
+    #   end
+    # end
+  end
+
   private
 
     def match_params
