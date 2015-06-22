@@ -46,7 +46,7 @@
             <td class="col-lrg-1"><%= f.text_field :city, :class => 'import-text-box' %></td>
             <td class="col-lrg-1"><%= f.text_field :state, :class => 'import-text-box' %></td>
             <td class="col-lrg-1"><%= f.text_field :zip_code, :class => 'import-text-box' %></td>
-            <td class="col-lrg-1"><%= f.text_field :link, :class => 'import-text-box' %></td>
+            <td class="col-lrg-1 match-link"><%= match.link %></td>
             <td class="col-lrg-1 import-buttons"><%= f.submit 'Update', :class => 'approve-delete-buttons update-button', :id => match.id %></td>
           <% end %>
 
