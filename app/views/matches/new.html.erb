@@ -1,0 +1,41 @@
+<div class="new-background">
+  <h1>NEW MATCH</h1>
+  <%= form_for :match, url: matches_path do |m| %>
+    <p>
+      <%= m.label :name %><br>
+      <%= m.text_field :name %>
+    </p>
+    <p>
+      <%= m.label :link %><br>
+      <%= m.text_field :link %>
+    </p>
+    <p>
+      <%= m.label :address %><br>
+      <%= m.text_field :address %>
+    </p>
+    <p>
+      <%= m.label :city %><br>
+      <%= m.text_field :city %>
+    </p>
+    <p>
+      <%= m.label :state %><br>
+      <%= m.text_field :state %>
+    </p>
+    <p>
+      <%= m.label :zip_code %><br>
+      <%= m.text_field :zip_code %>
+    </p>
+     <p>
+      <%= m.label :neighborhood_id %><br>
+      <%= m.text_field :neighborhood_id %>
+    </p>
+    <p>
+      <%= m.label :genre_id %><br>
+      <%= m.text_field :genre_id %>
+    </p>
+    <p>
+      <%= m.submit %>
+    </p>
+  <% end %>
+  <%= link_to 'Back', imports_path %>
+</div>

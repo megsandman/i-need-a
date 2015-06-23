@@ -39,7 +39,12 @@ class MatchesController < ApplicationController
   end
 
   def create
-    render plani: params[:match].inspect
+    @match = Match.new(match_params)
+    if @match.save
+      redirect_to '/imports'
+    else
+      render 'new'
+    end
   end
 
   def update
