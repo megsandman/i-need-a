@@ -1,0 +1,50 @@
+<h1>NEW MATCH</h1>
+<%= form_for :match, url: matches_path do |m| %>
+  <p>
+    <%= m.label :name %><br>
+    <%= m.text_field :name %>
+  </p>
+
+  <p>
+    <%= m.label :link %><br>
+    <%= m.text_area :link %>
+  </p>
+
+
+  <p>
+    <%= m.label :address %><br>
+    <%= m.text_area :address %>
+  </p>
+
+
+  <p>
+    <%= m.label :city %><br>
+    <%= m.text_area :city %>
+  </p>
+
+
+  <p>
+    <%= m.label :state %><br>
+    <%= m.text_area :state %>
+  </p>
+
+
+  <p>
+    <%= m.label :zip_code %><br>
+    <%= m.text_area :zip_code %>
+  </p>
+
+   <p>
+    <%= m.label :neighborhood_id %><br>
+    <%= m.text_area :neighborhood_id %>
+  </p>
+
+  <p>
+    <%= m.label :genre_id %><br>
+    <%= m.text_area :genre_id %>
+  </p>
+
+  <p>
+    <%= m.submit %>
+  </p>
+<% end %>

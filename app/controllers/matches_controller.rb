@@ -34,6 +34,14 @@ class MatchesController < ApplicationController
     render :json => @match, status: 200
   end
 
+  def new
+
+  end
+
+  def create
+    render plani: params[:match].inspect
+  end
+
   def update
     @match = Match.find(params[:id])
     respond_to do |format|

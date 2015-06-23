@@ -1,3 +1,25 @@
+/*WEBSITE*/
+
+.static-header{
+  float: right;
+  width: 40%;
+  margin-right: 0%;
+  padding-top: 10%;
+  color: black;
+}
+
+.contact-link {
+  color: black;
+}
+
+.contact-link:hover {
+  color: rgb(93,204, 175);
+}
+
+.contact-link:visited {
+  color: rgb(93,204, 175);
+}
+
 .dropdown-button {
   padding: 10px 16px;
   /*font-size: 18px;*/
