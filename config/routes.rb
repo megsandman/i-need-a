@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :genres, :only => [:show]
   resources :neighborhoods, :only => [:index]
   resources :imports, :only => [:index]
-  resources :cities, :only => [:index]
+  resources :cities, :only => [:index, :show]
   resources :websites, :only => [:index]
   resources :matches, :only => [:index, :show, :update, :new, :create]
 
